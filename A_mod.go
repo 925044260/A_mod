@@ -1,7 +1,12 @@
 package A_mod
 
-import B "github.com/925044260/B/v2"
+import (
+	"fmt"
 
-func Go() string {
-	return B.Hello
+	B "github.com/925044260/B/v2"
+)
+
+func A_print() {
+	fmt.Printf("A_mod v1.0.0")
+	B.B_print()
 }
